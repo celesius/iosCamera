@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "VideoSource.h"
+@interface ViewController : UIViewController<VideoSourceDelegate>
 
 
 @end

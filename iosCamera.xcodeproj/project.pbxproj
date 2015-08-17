@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		54F48F3C1B822181005E2DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F48F3B1B822181005E2DCD /* main.m */; };
 		54F48F3F1B822181005E2DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F48F3E1B822181005E2DCD /* AppDelegate.m */; };
-		54F48F421B822181005E2DCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F48F411B822181005E2DCD /* ViewController.m */; };
+		54F48F421B822181005E2DCD /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54F48F411B822181005E2DCD /* ViewController.mm */; };
 		54F48F451B822181005E2DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F48F431B822181005E2DCD /* Main.storyboard */; };
 		54F48F471B822181005E2DCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F48F461B822181005E2DCD /* Images.xcassets */; };
 		54F48F4A1B822181005E2DCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F48F481B822181005E2DCD /* LaunchScreen.xib */; };
 		54F48F561B822181005E2DCD /* iosCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F48F551B822181005E2DCD /* iosCameraTests.m */; };
+		54F48F611B8221D5005E2DCD /* VideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F48F601B8221D5005E2DCD /* VideoSource.m */; };
+		54F48F641B82223C005E2DCD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F48F631B82223C005E2DCD /* AVFoundation.framework */; };
+		54F48F661B822250005E2DCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F48F651B822250005E2DCD /* UIKit.framework */; };
+		54F48F6A1B823472005E2DCD /* UIImage+IF.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F48F691B823472005E2DCD /* UIImage+IF.m */; };
+		54F48F6E1B8235F3005E2DCD /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F48F6D1B8235F3005E2DCD /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +38,20 @@
 		54F48F3D1B822181005E2DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54F48F3E1B822181005E2DCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		54F48F401B822181005E2DCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		54F48F411B822181005E2DCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54F48F411B822181005E2DCD /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		54F48F441B822181005E2DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54F48F461B822181005E2DCD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54F48F491B822181005E2DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		54F48F4F1B822181005E2DCD /* iosCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F48F541B822181005E2DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F48F551B822181005E2DCD /* iosCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosCameraTests.m; sourceTree = "<group>"; };
+		54F48F5F1B8221D5005E2DCD /* VideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSource.h; sourceTree = "<group>"; };
+		54F48F601B8221D5005E2DCD /* VideoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSource.m; sourceTree = "<group>"; };
+		54F48F631B82223C005E2DCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		54F48F651B822250005E2DCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54F48F681B823472005E2DCD /* UIImage+IF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IF.h"; sourceTree = "<group>"; };
+		54F48F691B823472005E2DCD /* UIImage+IF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IF.m"; sourceTree = "<group>"; };
+		54F48F6D1B8235F3005E2DCD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F48F6E1B8235F3005E2DCD /* opencv2.framework in Frameworks */,
+				54F48F661B822250005E2DCD /* UIKit.framework in Frameworks */,
+				54F48F641B82223C005E2DCD /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,10 @@
 		54F48F2D1B822181005E2DCD = {
 			isa = PBXGroup;
 			children = (
+				54F48F6D1B8235F3005E2DCD /* opencv2.framework */,
+				54F48F651B822250005E2DCD /* UIKit.framework */,
+				54F48F631B82223C005E2DCD /* AVFoundation.framework */,
+				54F48F621B82222C005E2DCD /* framework */,
 				54F48F381B822181005E2DCD /* iosCamera */,
 				54F48F521B822181005E2DCD /* iosCameraTests */,
 				54F48F371B822181005E2DCD /* Products */,
@@ -81,14 +100,18 @@
 		54F48F381B822181005E2DCD /* iosCamera */ = {
 			isa = PBXGroup;
 			children = (
+				54F48F681B823472005E2DCD /* UIImage+IF.h */,
+				54F48F691B823472005E2DCD /* UIImage+IF.m */,
 				54F48F3D1B822181005E2DCD /* AppDelegate.h */,
 				54F48F3E1B822181005E2DCD /* AppDelegate.m */,
 				54F48F401B822181005E2DCD /* ViewController.h */,
-				54F48F411B822181005E2DCD /* ViewController.m */,
+				54F48F411B822181005E2DCD /* ViewController.mm */,
 				54F48F431B822181005E2DCD /* Main.storyboard */,
 				54F48F461B822181005E2DCD /* Images.xcassets */,
 				54F48F481B822181005E2DCD /* LaunchScreen.xib */,
 				54F48F391B822181005E2DCD /* Supporting Files */,
+				54F48F5F1B8221D5005E2DCD /* VideoSource.h */,
+				54F48F601B8221D5005E2DCD /* VideoSource.m */,
 			);
 			path = iosCamera;
 			sourceTree = "<group>";
@@ -117,6 +140,13 @@
 				54F48F541B822181005E2DCD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54F48F621B82222C005E2DCD /* framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F48F421B822181005E2DCD /* ViewController.m in Sources */,
+				54F48F611B8221D5005E2DCD /* VideoSource.m in Sources */,
+				54F48F421B822181005E2DCD /* ViewController.mm in Sources */,
 				54F48F3F1B822181005E2DCD /* AppDelegate.m in Sources */,
 				54F48F3C1B822181005E2DCD /* main.m in Sources */,
+				54F48F6A1B823472005E2DCD /* UIImage+IF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +381,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iosCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +397,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iosCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
