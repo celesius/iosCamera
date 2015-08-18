@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2CA587A5-1F20-4BF7-B971-FFD4470A752F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iosCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A</key>
+		<string>https://github.com/celesius/iosCamera.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iosCamera.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/celesius/iosCamera.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosCamera</string>
+		</dict>
+	</array>
+</dict>
+</plist>

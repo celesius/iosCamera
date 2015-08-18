@@ -15,6 +15,7 @@
 @property(nonatomic , strong) UIView *myView;
 @property(nonatomic , strong) UIImageView *myImageView;
 @property(nonatomic , strong) UIImageView *myImageViewDown;
+@property cv::Mat bitMat;
 @end
 
 @implementation ViewController
@@ -52,12 +53,22 @@
 
 -(void) frameReady:(UIImage *)frame
 {
-    dispatch_async( dispatch_get_main_queue(), ^{
-        self.myImageView.image = [frame imageRotatedByDegrees:90];
+    //self.bitMat;
         cv::Mat img = [self CVMat:[frame imageRotatedByDegrees:90]];
         cv::Mat grayImg;
         cv::cvtColor(img, grayImg, CV_BGRA2GRAY);
-        self.myImageViewDown.image = [self UIImageFromCVMat:grayImg];
+        cv::Mat bit;
+        cv::adaptiveThreshold(grayImg, bit, 255, CV_ADAPTIVE_THRESH_GAUSSIAN_C, CV_THRESH_BINARY, 25, 10);
+    cv::Mat canny;
+    cv::Canny(grayImg, canny, 100, 100);
+    dispatch_async(dispatch_get_global_queue(0,0), ^{
+        //耗时处理
+        dispatch_async( dispatch_get_main_queue(), ^{
+        //同步显示
+            self.myImageView.image = [frame imageRotatedByDegrees:90];
+            self.myImageViewDown.image = [self UIImageFromCVMat:canny];
+            
+        });
     });
 }
 
