@@ -34,7 +34,7 @@
     
     self.myView = [[UIView alloc]init];
     self.myVideoSource = [[VideoSource alloc]init];
-  
+    
     self.myImageView.backgroundColor = [UIColor redColor];
     self.myImageViewDown.backgroundColor = [UIColor blueColor];
     
@@ -53,7 +53,7 @@
 -(void) frameReady:(UIImage *)frame
 {
     dispatch_async( dispatch_get_main_queue(), ^{
-    self.myImageView.image = [frame imageRotatedByDegrees:90];
+        self.myImageView.image = [frame imageRotatedByDegrees:90];
         cv::Mat img = [self CVMat:[frame imageRotatedByDegrees:90]];
         cv::Mat grayImg;
         cv::cvtColor(img, grayImg, CV_BGRA2GRAY);
