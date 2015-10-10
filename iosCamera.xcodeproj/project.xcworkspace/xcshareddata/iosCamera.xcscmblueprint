@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E609DD15689CC93D8F4D219EB393F30F9F726178" : 0,
+    "1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2CA587A5-1F20-4BF7-B971-FFD4470A752F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E609DD15689CC93D8F4D219EB393F30F9F726178" : "..\/GPUImage",
+    "1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A" : "iosCamera\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iosCamera",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iosCamera.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/celesius\/iosCamera.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1EB16FDCB29B080E5658EAE9DC08D21830A7CC8A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BradLarson\/GPUImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E609DD15689CC93D8F4D219EB393F30F9F726178"
+    }
+  ]
+}

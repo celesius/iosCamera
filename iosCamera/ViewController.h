@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "VideoSource.h"
-@interface ViewController : UIViewController<VideoSourceDelegate>
+#import "ImageProcess.h"
+@interface ViewController : UIViewController<VideoSourceDelegate, ImageProcessDelegate>
 
 
 @end
